@@ -1,46 +1,85 @@
 lista najczęstszych słów dla ham:
+the: 13483
+to: 13337
+for: 11164
+and: 11116
+a: 10743
+of: 10391
+you: 10156
+on: 10146
+in: 9796
+is: 9790
 
 lista najczęstszych słów dla spam:
+to: 12136
+the: 11169
+and: 10966
+a: 10678
+you: 10596
+for: 9729
+of: 9679
+your: 9200
+is: 8842
+in: 8522
+
 
 zero rule:
-accuracy:
-sensivity:
-specifity
-precision:
+accuracy:	 0.517497034400949
+sensivity:	 1.0
+specifity:	 0.0
+precision:	 0.517497034400949
 
 
 Bayes
-accuracy:
-sensivity:
-specifity
-precision:
-
+accuracy:	 0.8291814946619217
+sensivity:	 0.6764705882352942
+specifity:	 0.9908424908424909
+precision:	 0.9873737373737373
 
 
 Bayes + stemmer lancester:
-accuracy:
-sensivity:
-specifity
-precision:
+accuracy:	 0.8644721233689205
+sensivity:	 0.7380248373743347
+specifity:	 0.9916716240333135
+precision:	 0.9889064976228209
 
 
 Bayes + stemmer porter:
-accuracy:
-sensivity:
-specifity
-precision:
+accuracy:	 0.844306049822064
+sensivity:	 0.7063953488372093
+specifity:	 0.9878934624697336
+precision:	 0.9838056680161943
+
 
 Bayes + stemmer snowball:
-accuracy:
-sensivity:
-specifity
-precision:
+accuracy:	 0.849644128113879
+sensivity:	 0.7143705463182898
+specifity:	 0.9845971563981043
+precision:	 0.9788445890968267
 
 
 Bayes + laplac:
-alfa:
-beta:
-accuracy:
-sensivity:
-specifity
-precision:
+alfa = 0.2
+beta = 0.7
+accuracy:	 0.8730723606168446
+sensivity:	 0.7577675489067894
+specifity:	 0.9957160342717258
+precision:	 0.9947129909365559
+
+
+Bayes + laplac:
+alfa = 0.1
+beta = 0.8
+accuracy:	 0.8600237247924081
+sensivity:	 0.7260514018691588
+specifity:	 0.9981927710843373
+precision:	 0.9975922953451043
+
+
+Bayes + laplac:
+alfa = 0.2
+beta = 0.8
+accuracy:	 0.8573546856465006
+sensivity:	 0.7277397260273972
+specifity:	 0.9975308641975309
+precision:	 0.99687255668491

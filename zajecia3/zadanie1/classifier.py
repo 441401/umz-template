@@ -145,12 +145,13 @@ class Bayes(classifier):
         n = 10
         mcw_spam = sorted(cls.spam_words_dict.items(), key = lambda x:x[1], reverse = True) #iteritems(), viewitems()
         mcw_ham = sorted(cls.ham_words_dict.items(), key = lambda x:x[1], reverse = True) #iteritems(), viewitems()
-        print(n, ' most common words in spam:')
+        print(n, 'most common words in spam:')
         for mcw in mcw_spam[:n]:
-            print(str(mcw[0]) + ': ' + str(mcw[1]))
-        print('\n', n, ' most common words in ham:')
+            print(mcw[0] + ': ' + str(mcw[1]))
+        print('\n')
+        print(n, 'most common words in ham:')
         for mcw in mcw_ham[:n]:
-            print(str(mcw[0]) + ': ' + str(mcw[1]))
+            print(mcw[0] + ': ' + str(mcw[1]))
 
 
 class Bayes_stemmed(Bayes):

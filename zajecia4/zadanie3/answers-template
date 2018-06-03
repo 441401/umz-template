@@ -1,16 +1,66 @@
 YOUR OWN PARAMETERS:
-TRAIN SET- 
-accuracy:
+TRAIN SET- 1
+accuracy: 1.0
 
-TEST SET- 
-accuracy:
+TEST SET- 1
+accuracy: 0.6818181818181818
 
-----------
+TRAIN SET- 2
+accuracy: 0.8489583333333334
 
-TRAIN SET- 
-accuracy:
+TEST SET- 2
+accuracy: 0.6818181818181818
 
-TEST SET- 
-accuracy:
+TRAIN SET- 3
+accuracy: 0.84375
 
-... ( to be completed with new parametrized models)
+TEST SET- 3
+accuracy: 0.6818181818181818
+
+TRAIN SET- 5
+accuracy: 0.7760416666666666
+
+TEST SET- 5
+accuracy: 0.5
+
+TRAIN SET- 8
+accuracy: 0.703125
+
+TEST SET- 8
+accuracy: 0.45454545454545453
+
+TRAIN SET- 13
+accuracy: 0.6614583333333334
+
+TEST SET- 13
+accuracy: 0.45454545454545453
+
+TRAIN SET- 21
+accuracy: 0.671875
+
+TEST SET- 21
+accuracy: 0.5454545454545454
+
+TRAIN SET- 34
+accuracy: 0.6197916666666666
+
+TEST SET- 34
+accuracy: 0.5
+
+TRAIN SET- 55
+accuracy: 0.5989583333333334
+
+TEST SET- 55
+accuracy: 0.5
+
+TRAIN SET- 89
+accuracy: 0.4010416666666667
+
+TEST SET- 89
+accuracy: 0.36363636363636365
+
+TRAIN SET- 144
+accuracy: 0.3333333333333333
+
+TEST SET- 144
+accuracy: 0.2727272727272727

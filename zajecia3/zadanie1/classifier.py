@@ -131,6 +131,28 @@ class Bayes(classifier):
                 p = p * (1 - word_list[i])
         return p
 
+    @classmethod
+    def most_common_words(cls, data_set):
+        cls.spam_words_dict = dict()
+        cls.ham_words_dict = dict()
+        cls.set_apriori(data_set)
+        for email in data_set:
+            if email.is_spam:
+                cls.add_tokens_to_dict(email, cls.spam_words_dict)
+            else:
+                cls.add_tokens_to_dict(email, cls.ham_words_dict)
+            cls.print_progress(data_set)
+        n = 10
+        mcw_spam = sorted(cls.spam_words_dict.items(), key = lambda x:x[1], reverse = True) #iteritems(), viewitems()
+        mcw_ham = sorted(cls.ham_words_dict.items(), key = lambda x:x[1], reverse = True) #iteritems(), viewitems()
+        print(n, 'most common words in spam:')
+        for mcw in mcw_spam[:n]:
+            print(mcw[0] + ': ' + str(mcw[1]))
+        print('\n')
+        print(n, 'most common words in ham:')
+        for mcw in mcw_ham[:n]:
+            print(mcw[0] + ': ' + str(mcw[1]))
+
 
 class Bayes_stemmed(Bayes):
     @classmethod
@@ -164,8 +186,8 @@ class Bayes_stemmed_snowball(Bayes_stemmed):
 class Bayes_laplac(Bayes):
     @classmethod
     def get_word_prob(cls, word, type):
-        alfa = 0.1
-        beta = 0.5
+        alfa = 0.2
+        beta = 0.8
         assert type in ('spam', 'ham')
         if type == 'spam':
             if word in cls.spam_words_dict.keys():

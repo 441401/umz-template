@@ -1,13 +1,42 @@
 TRAIN SET- NO DEPTH RESTRAIN
-accuracy:
+accuracy: 0.9895833333333334
 
 TEST SET- NO DEPTH RESTRAIN
-accuracy:
+accuracy: 0.7272727272727273
 
 TRAIN SET- MAX DEPTH 4
-accuracy:
+accuracy: 0.828125
 
 TEST SET- MAX DEPTH 4
-accuracy:
+accuracy: 0.5909090909090909
 
 YOUR OWN FOREST PARAMETERS:
+TRAIN SET- max_features=3, oob_score=1, n_estimators=100
+accuracy: 1.0
+
+TEST SET- max_features=3, oob_score=1, n_estimators=100
+accuracy: 0.8181818181818182
+
+TRAIN SET- max_features=0.333, oob_score=1, n_estimators=100
+accuracy: 1.0
+
+TEST SET- max_features=0.333, oob_score=1, n_estimators=100
+accuracy: 0.8181818181818182
+
+TRAIN SET- max_features=None, oob_score=1, n_estimators=100
+accuracy: 1.0
+
+TEST SET- max_features=None, oob_score=1, n_estimators=100
+accuracy: 0.7727272727272727
+
+TRAIN SET- max_features="sqrt", oob_score=1, n_estimators=100
+accuracy: 1.0
+
+TEST SET- max_features="sqrt", oob_score=1, n_estimators=100
+accuracy: 0.8181818181818182
+
+TRAIN SET- max_features='log2', oob_score=1, n_estimators=100
+accuracy: 1.0
+
+TEST SET- max_features='log2', oob_score=1, n_estimators=100
+accuracy: 0.7727272727272727

@@ -1,5 +1,5 @@
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix
 
 train = pd.read_csv('train.csv', sep=',')
@@ -11,34 +11,53 @@ train_Y = train['Class']
 test_X = pd.DataFrame(test, columns=test.columns[:-1])
 test_Y = test['Class']
 
-
-clf = RandomForestClassifier()
-clf = clf.fit(train_X, train_Y)
-
-#max_depth=4
-clf = RandomForestClassifier(max_depth=4)
-clf = clf.fit(train_X, train_Y)
-
 #I
-clf = RandomForestClassifier(max_features=3, oob_score=1, n_estimators=100)
-clf = clf.fit(train_X, train_Y)
+#clf = KNeighborsClassifier(n_neighbors=0)
+#clf = clf.fit(train_X, train_Y)
 
 #II
-clf = RandomForestClassifier(max_features=0.333, oob_score=1, n_estimators=100)
+clf = KNeighborsClassifier(n_neighbors=1)
 clf = clf.fit(train_X, train_Y)
 
 #III
-clf = RandomForestClassifier(max_features=None, oob_score=1, n_estimators=100)
+clf = KNeighborsClassifier(n_neighbors=2)
 clf = clf.fit(train_X, train_Y)
 
 #IV
-clf = RandomForestClassifier(max_features="sqrt", oob_score=1, n_estimators=100)
+clf = KNeighborsClassifier(n_neighbors=3)
 clf = clf.fit(train_X, train_Y)
 
 #V
-clf = RandomForestClassifier(max_features='log2', oob_score=1, n_estimators=100)
+clf = KNeighborsClassifier(n_neighbors=5)
 clf = clf.fit(train_X, train_Y)
 
+#VI
+clf = KNeighborsClassifier(n_neighbors=8)
+clf = clf.fit(train_X, train_Y)
+
+#VII
+clf = KNeighborsClassifier(n_neighbors=13)
+clf = clf.fit(train_X, train_Y)
+
+#VIII
+clf = KNeighborsClassifier(n_neighbors=21)
+clf = clf.fit(train_X, train_Y)
+
+#IX
+clf = KNeighborsClassifier(n_neighbors=34)
+clf = clf.fit(train_X, train_Y)
+
+#X
+clf = KNeighborsClassifier(n_neighbors=55)
+clf = clf.fit(train_X, train_Y)
+
+#XI
+clf = KNeighborsClassifier(n_neighbors=89)
+clf = clf.fit(train_X, train_Y)
+
+#XI
+clf = KNeighborsClassifier(n_neighbors=144)
+clf = clf.fit(train_X, train_Y)
 
 print('TRAIN SET')
 print(confusion_matrix(clf.predict(train_X), train_Y))

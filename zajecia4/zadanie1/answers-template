@@ -1,13 +1,42 @@
 TRAIN SET- NO DEPTH RESTRAIN
-accuracy:
+accuracy: 1.0
 
 TEST SET- NO DEPTH RESTRAIN
-accuracy:
+accuracy: 0.5909090909090909
 
 TRAIN SET- MAX DEPTH 4
-accuracy:
+accuracy: 0.765625
 
 TEST SET- MAX DEPTH 4
-accuracy:
+accuracy: 0.7272727272727273
 
 YOUR OWN TREE PARAMETERS:
+TRAIN SET- presort=1, min_samples_leaf=3
+accuracy: 0.8958333333333334
+
+TEST SET- presort=1, min_samples_leaf=3
+accuracy: 0.5
+
+TRAIN SET- presort=1, min_samples_split=3
+accuracy: 0.9895833333333334
+
+TEST SET- presort=1, min_samples_split=3
+accuracy: 0.6363636363636364
+
+TRAIN SET- presort=1, min_samples_leaf=10, min_samples_split=10
+accuracy: 0.75
+
+TEST SET- presort=1, min_samples_leaf=10, min_samples_split=10
+accuracy: 0.7272727272727273
+
+TRAIN SET- presort=1, criterion='entropy', splitter=random
+accuracy: 1.0
+
+TEST SET- presort=1, criterion='entropy', splitter=random
+accuracy: 0.7727272727272727
+
+TRAIN SET- presort=1, max_features='log2'
+accuracy: 1.0
+
+TEST SET- presort=1, max_features='log2'
+accuracy: 0.6818181818181818
